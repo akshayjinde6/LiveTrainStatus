@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp"
+        tools:context="com.example.akshayjinde.livetrainstatus.data">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="Enter Details Here"
+            android:textSize="30.0sp" />
+
+        <LinearLayout
+            android:layout_width="330.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40.0dip"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            android:paddingTop="10.0dip">
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20.0dip"
+                android:background="#ffffffff"
+                android:hint="   Enter Train Number Here   "
+                android:inputType="number"
+                android:padding="10.0dip" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20.0dip"
+                android:text="Choose Journey Date Below"
+                android:textColor="#ffffffff"
+                android:textSize="25.0sp" />
+
+            <DatePicker
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:background="#ff3f51b5"
+                android:headerBackground="#ff3f51b5" />
+
+            <Button
+                android:id="@+id/buttonmain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:onClick="getresult"
+                android:text="get live status"
+                android:layout_marginBottom="20dp"
+                android:textColor="#ff3f51b5" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

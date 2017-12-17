@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.akshayjinde.livetrainstatus.result">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:id="@+id/status_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="10.0dip"
+            android:text="LIVE  STATUS"
+            android:textSize="25.0sp" />
+
+        <TextView
+            android:id="@+id/result_text"
+            android:layout_width="fill_parent"
+            android:layout_height="80.0dip"
+            android:layout_below="@id/status_text"
+            android:padding="10.0dip"
+            android:gravity="center"
+            android:text="---"
+            android:textSize="22.0sp" />
+
+        <TableLayout
+            android:id="@+id/table_id"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/result_text">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10.0dip"
+                    android:text="Train Number        : "
+                    android:textSize="20.0dip" />
+
+                <TextView
+                    android:id="@+id/trno_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:padding="10.0dip"
+                    android:text="  --"
+                    android:textSize="22.0dip" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10.0dip"
+                    android:text="Station Name        : "
+                    android:textSize="20.0dip" />
+
+                <TextView
+                    android:id="@+id/sta_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:padding="10.0dip"
+                    android:text="  --"
+                    android:textSize="22.0dip" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10.0dip"
+                    android:text="Station Code         : "
+                    android:textSize="20.0dip" />
+
+                <TextView
+                    android:id="@+id/code_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:padding="10.0dip"
+                    android:text="  --"
+                    android:textSize="22.0dip" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10.0dip"
+                    android:text="Train Start Date    : "
+                    android:textSize="20.0dip" />
+
+                <TextView
+                    android:id="@+id/date_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:padding="10.0dip"
+                    android:text="  --"
+                    android:textSize="22.0dip" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10.0dip"
+                    android:text="Scheduled Arrival : "
+                    android:textSize="20.0dip" />
+
+                <TextView
+                    android:id="@+id/scharr_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:padding="10.0dip"
+                    android:text="  --"
+                    android:textSize="22.0dip" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10.0dip"
+                    android:text="Actual Arrival        : "
+                    android:textSize="20.0dip" />
+
+                <TextView
+                    android:id="@+id/actarr_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:padding="10.0dip"
+                    android:text="  --"
+                    android:textSize="22.0dip" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10.0dip"
+                    android:text="Scheduled Depar. : "
+                    android:textSize="20.0dip" />
+
+                <TextView
+                    android:id="@+id/schdep_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:padding="10.0dip"
+                    android:text="  --"
+                    android:textSize="22.0dip" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10.0dip"
+                    android:text="Actual Departure  : "
+                    android:textSize="20.0dip" />
+
+                <TextView
+                    android:id="@+id/actdep_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:padding="10.0dip"
+                    android:text="  --"
+                    android:textSize="22.0dip" />
+            </TableRow>
+        </TableLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
